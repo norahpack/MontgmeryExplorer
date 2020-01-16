@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ListPage implements OnInit {
   private selectedItem: any;
   private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
+    'sad',
+    'outlet',
+    'bug',
+    'finger-print',
     'basketball',
     'paper-plane',
     'american-football',
@@ -19,14 +19,25 @@ export class ListPage implements OnInit {
     'bluetooth',
     'build'
   ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
+  private routing = [
+    "/first",
+    '/second',
+    '/third',
+    '/fourth',
+    '/third',
+    '/second',
+    '/first',
+    '/second',
+    '/first',
+    '/second'
+  ];
+  public items: Array<{ title: string; routerLink: string; icon: string }> = [];
   constructor() {
     for (let i = 1; i < 11; i++) {
       this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
+        title: 'Location ' + i,
+        routerLink: this.routing[i-1],
+        icon: this.icons[i-1] })
     }
   }
 

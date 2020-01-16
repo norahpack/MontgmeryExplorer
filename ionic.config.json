@@ -1,5 +1,7 @@
 {
   "name": "Montgomery Explorer",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
