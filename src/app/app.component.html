@@ -3,15 +3,15 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-header>
         <ion-toolbar>
-          <ion-title color="success">Menu</ion-title>
+          <ion-title color="danger">Menu</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content>
         <ion-list>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon" color="success"></ion-icon>
-              <ion-label color="success">
+              <ion-icon slot="start" [name]="p.icon" color="danger"></ion-icon>
+              <ion-label color="primary">
                 {{p.title}}
               </ion-label>
             </ion-item>
