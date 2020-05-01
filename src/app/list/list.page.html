@@ -4,7 +4,7 @@
       <ion-menu-button color="secondary"></ion-menu-button>
     </ion-buttons>
     <ion-title color="tertiary">
-      List
+      Timeline
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,7 +13,7 @@
   <ion-list>
     <ion-item *ngFor="let item of items">
       <ion-button expand="full" fill="clear" color="primary" size="large" [routerLink]="item.routerLink" routerDirection="root">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
+      <ion-icon [name]="item.icon" color="secondary" slot="start"></ion-icon>
       {{item.title}}
     </ion-button>
     </ion-item>

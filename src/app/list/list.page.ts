@@ -8,16 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class ListPage implements OnInit {
   private selectedItem: any;
   private icons = [
-    'sad',
-    'build',
-    'bug',
-    'finger-print',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
+    'body-outline',
+    'play-back-circle-outline',
+    'fast-food-outline',
+    'leaf-outline',
+    'football-outline',
+    'thunderstorm-outline',
+    'construct-outline',
+    'map-outline',
+    'trail-sign-outline',
+    'school-outline'
   ];
   private routing = [
     "/first",
@@ -31,11 +31,25 @@ export class ListPage implements OnInit {
     '/first',
     '/second'
   ];
+  private names =[
+  "1795-1995: From Settlers to a City",
+  "1995: Bicentennial Celebration",
+  "1996: City Preserves Sage Tavern",
+  "1997: Weller Park Dedication",
+  "1998: Sister Cities World Youth Soccer Exchange",
+  "1999: Tornado",
+  "2000: Recovery",
+  "2001: Parrott Alley Dedication",
+  "2002: Ted Gregory Lane",
+  "2003: New Montgomery Elementary School"
+
+
+  ]
   public items: Array<{ title: string; routerLink: string; icon: string }> = [];
   constructor() {
     for (let i = 1; i < 11; i++) {
       this.items.push({
-        title: 'Location ' + i,
+        title: this.names[i-1],
         routerLink: this.routing[i-1],
         icon: this.icons[i-1] })
     }
