@@ -2,8 +2,16 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+@import url('https://fonts.googleapis.com/css?family=Garamond:100,300,400,700');
+:root,
+:root[mode="md"],
+:root[mode="ios"] {
+  --ion-font-family: 'Garamond', sans-serif;
+  font-family: var(--ion-font-family) !important;
+}
 :root {
-  /** primary **/
+
+  /** navy **/
   --ion-color-primary: #003B71;
   --ion-color-primary-rgb: 0, 59, 113;
   --ion-color-primary-contrast: #ffffff;
@@ -11,7 +19,7 @@
   --ion-color-primary-shade: #003463;
   --ion-color-primary-tint: #1a4f7f;
 
-  /** secondary **/
+  /** gold **/
   --ion-color-secondary: #ffd040;
   --ion-color-secondary-rgb: 255, 208, 64;
   --ion-color-secondary-contrast: #000000;
@@ -19,7 +27,7 @@
   --ion-color-secondary-shade: #e0b738;
   --ion-color-secondary-tint: #ffd553;
 
-  /** tertiary **/
+  /** light blue **/
   --ion-color-tertiary: #afbed0;
   --ion-color-tertiary-rgb: 175, 190, 208;
   --ion-color-tertiary-contrast: #000000;
@@ -43,7 +51,7 @@
   --ion-color-warning-shade: #e0b500;
   --ion-color-warning-tint: #ffd31a;
 
-  /** danger **/
+  /** red **/
   --ion-color-danger: #b2292e;
   --ion-color-danger-rgb: 178, 41, 46;
   --ion-color-danger-contrast: #ffffff;

@@ -9,7 +9,7 @@ export class ListPage implements OnInit {
   private selectedItem: any;
   private icons = [
     'sad',
-    'outlet',
+    'build',
     'bug',
     'finger-print',
     'basketball',
