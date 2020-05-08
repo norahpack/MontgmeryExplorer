@@ -1,29 +1,33 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title color="primary">1795-1995: From Settlers to a City</ion-title>
+    <ion-title size="small" color="primary">1795-1995: From Settlers to a City</ion-title>
     <ion-thumbnail slot="end"> 
-    	<img class="imgmg" src="assets/icon/favicon.png">
+    	<img class="imgmg" src="assets/icon/logo.png">
 	</ion-thumbnail>
     <ion-menu-button autoHide="false" slot="start" color="danger"></ion-menu-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-	<ion-card class="firstcard">
-		<img class="dog" src="assets/icon/cooperWest.jpeg"/>
-		<ion-card-content>
-			<ion-card-title color="primary">
-				Blake Stincks
+	<ion-card>
+		<img src="assets/icon/cooperWest.jpeg"/>
+		<ion-card-content color="secondary">
+			<ion-card-title size="small" color="primary">
+				Cooper Road
 			</ion-card-title>
+			The community of Montgomery began in the spring of 1795 when six families from the Village of Montgomery, New York, set out on a journey that brought them to what is today Montgomery, Ohio. The families were all related with names that have become commonplace in our community. There were the three Felter sisters and their husbands Cornelius Snider, the leader; Jacob Roosa; and Nathaniel Terwilliger, along with three Felter brothers and their wives. The closely knit group gathered their possessions and traveled through Fort Pitt (now Pittsburgh), floated down the Ohio River to the mouth of the Little Miami River, and made their way up Sycamore Creek to where it meets the present Montgomery Road just north of Bethesda North Hospital.
 		</ion-card-content>
 	</ion-card>
+
 	<ion-card>
-		<img height="platform.width()" width="80" src="assets/icon/logo.png"/>
+		<img class="morgan" src="assets/icon/morgan.jpg"/>
 		<ion-card-content>
-			<ion-card-title>
-				Blake SUcks
+			<ion-card-title size="small" color="primary">
+			Confederate General John Hunt Morgan
 			</ion-card-title>
+			The first winter was spent in simple lean-to shelters left by early scouts. Then, in the spring of 1796, they moved to the junction of two Indian trails, which are now Cooper Rd. and Main St. On July 8, 1863, Confederate General John Hunt Morgan crossed the Ohio River near Louisville with 2500 cavalry as a diversionary raid intended to draw Union forces away from the Confederate fighting front in Tennessee. Five days later, on July 13, they entered Ohio near Harrison, and in one long night and day crossed northern Hamilton County with Union forces in close pursuit, eventually moving through Montgomery.
 		</ion-card-content>
+		<ion-button class="ion-text-wrap" size="small" fill="clear" color="primary" routerLink="/second" routerDirection="root"> Learn more about General Morgan! </ion-button>
 	</ion-card>
 	<ion-card>
 		<img height="platform.width()" width="80" src="assets/icon/cow.png"/>
@@ -33,9 +37,9 @@
 			</ion-card-title>
 		</ion-card-content>
 	</ion-card>
-	<ion-item>
-		<ion-button slot="end" fill="clear" color="secondary" size="medium" routerLink="/firstp1" routerDirection="root"> Test your knowledge with trivia!
-			<ion-icon slot="end" color="dark" size="medium" name="arrow-dropright"></ion-icon>
+	<ion-item class="ion-text-wrap">
+		<ion-button expand="full" slot="start" fill="clear" color="primary" size="small" routerLink="/firstp1" routerDirection="root"> Test your knowledge with trivia!
+			<ion-icon slot="end" color="primary" size="medium" name="arrow-forward-circle-outline"></ion-icon>
 		</ion-button>
 	</ion-item>
 </ion-content>

@@ -47,6 +47,82 @@ const routes: Routes = [
     path: 'firstp4',
     loadChildren: () => import('./locations/first/slideshow1/firstp4/firstp4.module').then( m=> m.Firstp4PageModule)
   },
+  {
+    path: 'soccer',
+    loadChildren: () => import('./locations/soccer/soccer.module').then( m => m.SoccerPageModule)
+  },
+  {
+    path: 'tornado',
+    loadChildren: () => import('./locations/tornado/tornado.module').then( m => m.TornadoPageModule)
+  },
+  {
+    path: 'recovery',
+    loadChildren: () => import('./locations/recovery/recovery.module').then( m => m.RecoveryPageModule)
+  },
+  {
+    path: 'parrott',
+    loadChildren: () => import('./locations/parrott/parrott.module').then( m => m.ParrottPageModule)
+  },
+  {
+    path: 'ted',
+    loadChildren: () => import('./locations/ted/ted.module').then( m => m.TedPageModule)
+  },
+  {
+    path: 'school',
+    loadChildren: () => import('./locations/school/school.module').then( m => m.SchoolPageModule)
+  },
+  {
+    path: 'flower',
+    loadChildren: () => import('./locations/flower/flower.module').then( m => m.FlowerPageModule)
+  },
+  {
+    path: 'art',
+    loadChildren: () => import('./locations/art/art.module').then( m => m.ArtPageModule)
+  },
+  {
+    path: 'car',
+    loadChildren: () => import('./locations/car/car.module').then( m => m.CarPageModule)
+  },
+  {
+    path: 'crash',
+    loadChildren: () => import('./locations/crash/crash.module').then( m => m.CrashPageModule)
+  },
+  {
+    path: 'leadership',
+    loadChildren: () => import('./locations/leadership/leadership.module').then( m => m.LeadershipPageModule)
+  },
+  {
+    path: 'neuilly',
+    loadChildren: () => import('./locations/neuilly/neuilly.module').then( m => m.NeuillyPageModule)
+  },
+  {
+    path: 'farmers',
+    loadChildren: () => import('./locations/farmers/farmers.module').then( m => m.FarmersPageModule)
+  },
+  {
+    path: 'fire',
+    loadChildren: () => import('./locations/fire/fire.module').then( m => m.FirePageModule)
+  },
+  {
+    path: 'cert',
+    loadChildren: () => import('./locations/cert/cert.module').then( m => m.CertPageModule)
+  },
+  {
+    path: 'gateway',
+    loadChildren: () => import('./locations/gateway/gateway.module').then( m => m.GatewayPageModule)
+  },
+  {
+    path: 'french',
+    loadChildren: () => import('./locations/french/french.module').then( m => m.FrenchPageModule)
+  },
+  {
+    path: 'july4',
+    loadChildren: () => import('./locations/july4/july4.module').then( m => m.July4PageModule)
+  },
+  {
+    path: 'rain',
+    loadChildren: () => import('./locations/rain/rain.module').then( m => m.RainPageModule)
+  },
 
 ];
 
