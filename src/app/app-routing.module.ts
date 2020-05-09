@@ -123,6 +123,10 @@ const routes: Routes = [
     path: 'rain',
     loadChildren: () => import('./locations/rain/rain.module').then( m => m.RainPageModule)
   },
+  {
+    path: 'morgan',
+    loadChildren: () => import('./extras/morgan/morgan.module').then( m => m.MorganPageModule)
+  },
 
 ];
 
