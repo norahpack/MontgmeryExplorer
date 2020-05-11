@@ -35,7 +35,7 @@ export class ListPage implements OnInit {
   private routing = [
     "/first",
     '/second',
-    '/third',
+    '/tavern',
     '/fourth',
     '/soccer',
     '/tornado',

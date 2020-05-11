@@ -131,6 +131,18 @@ const routes: Routes = [
     path: 'tornadopics',
     loadChildren: () => import('./tornado/tornadopics/tornadopics.module').then( m => m.TornadopicsPageModule)
   },
+  {
+    path: 'sage',
+    loadChildren: () => import('./locations/sage/sage.module').then( m => m.SagePageModule)
+  },
+  {
+    path: 'tavern',
+    loadChildren: () => import('./tavern/tavern.module').then( m => m.TavernPageModule)
+  },
+  {
+    path: 'landmarks',
+    loadChildren: () => import('./landmarks/landmarks.module').then( m => m.LandmarksPageModule)
+  },
 
 ];
 

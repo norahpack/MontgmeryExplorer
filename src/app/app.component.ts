@@ -20,6 +20,12 @@ export class AppComponent {
       title: 'Timeline',
       url: '/list',
       icon: 'list'
+    },
+    {
+    title: 'Landmarks',
+    url: '/landmarks',
+    icon: 'pin'
+
     }
   ];
 
