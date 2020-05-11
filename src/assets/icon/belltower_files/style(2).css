@@ -1,0 +1,213 @@
+.cd-timeline-content .cd-date {
+    display: none;
+}
+
+#cd-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #d7e4ed;
+}
+
+.cd-timeline-img .et-pb-icon {
+    padding: 6px;
+    font-size: 28px;
+    box-shadow: 0px 0px 0px 4px #d7e4ed;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.et_pb_vertical_posts_timeline .et_pb_section, .et_pb_vertical_posts_timeline .et_pb_row {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1170px) {
+    .et_pb_column_4_4 #cd-timeline {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    .et_pb_column_4_4 #cd-timeline::before {
+        left: 50%;
+        margin-left: -2px;
+    }
+  
+    .et_pb_column_4_4 .cd-timeline-img .et-pb-icon {
+        padding: 16px;
+        min-width: 60px;
+        min-height: 60px;
+    }  
+}
+
+.cd-timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+
+.cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1170px) {
+    
+    .et_pb_column_4_4 .cd-timeline-block {
+        margin: 4em 0;
+    }
+  
+    .et_pb_column_4_4 .cd-timeline-block:first-child {
+        margin-top: 0;
+    }
+    
+    .et_pb_column_4_4 .cd-timeline-block:last-child {
+        margin-bottom: 0;
+    }
+  
+}
+
+.cd-timeline-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px white;
+}
+
+.cd-timeline-img img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+.cd-timeline-img {
+  background: #d7e4ed;
+}
+
+@media only screen and (min-width: 1170px) {
+    
+    .et_pb_column_4_4 .cd-timeline-img {
+        width: 60px;
+        height: 60px;
+        left: 50%;
+        margin-left: -30px;
+    }
+  
+}
+
+.cd-timeline-content {
+  position: relative;
+  margin-left: 60px;
+  background: white;
+  padding: 1em;
+  box-shadow: 0 4px 0 #d7e4ed;
+}
+
+.cd-timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-timeline-content .cd-read-more {
+  display: inline-block;
+  float: right;
+  padding: .8em 1em;
+  background: #acb7c0;
+  color: white;
+}
+
+.cd-timeline-content .cd-date {
+  float: left;
+  padding: .8em 0;
+  opacity: .7;
+}
+
+.cd-timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid white;
+}
+
+@media only screen and (min-width: 1170px) {
+    
+    .et_pb_column_4_4 .cd-timeline-content {
+        margin-left: 0;
+        padding: 1.6em;
+        width: 45%;
+    }
+    
+    .et_pb_column_4_4 .cd-timeline-content::before {
+        top: 24px;
+        left: 100%;
+        border-color: transparent;
+        border-left-color: white;
+    }
+    
+    .et_pb_column_4_4 .cd-timeline-content .cd-read-more {
+        float: left;
+    }
+    
+    .et_pb_column_4_4 .cd-timeline-content .cd-date {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        left: 122%;
+        top: 6px;
+    }
+    
+    .et_pb_column_4_4 .cd-timeline-block:nth-child(even) .cd-timeline-content {
+        float: right;
+    }
+    
+    .et_pb_column_4_4 .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+        top: 24px;
+        left: auto;
+        right: 100%;
+        border-color: transparent;
+        border-right-color: white;
+    }
+    
+    .et_pb_column_4_4 .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+        float: right;
+    }
+    
+    .et_pb_column_4_4 .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+        left: auto;
+        right: 122%;
+        text-align: right;
+    }
+
+}

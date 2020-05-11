@@ -1,0 +1,87 @@
+.et_pb_fullwidth_portfolio .et_pb_portfolio_image.show_excerpt:hover .et_overlay:before {
+    top: 10%;
+}
+
+.et_pb_fullwidth_portfolio .et_pb_portfolio_image.show_excerpt:hover h3 {
+    margin-top: 15%;
+}
+
+.et_pb_fullwidth_portfolio .et_pb_portfolio_image.show_excerpt .post-excerpt {
+    padding: 0 10px;
+}
+
+.et_pb_fullwidth_portfolio.et_pb_bg_layout_light .et_pb_portfolio_image.show_excerpt .post-excerpt {
+    color: #666;
+}
+
+.et_pb_fullwidth_portfolio.et_pb_bg_layout_dark .et_pb_portfolio_image.show_excerpt .post-excerpt {
+    color: #fff;
+}
+
+.et_pb_fullwidth_portfolio.carousel_arrow_sides:hover .et-pb-arrow-prev {
+    left:-17px;
+}
+
+.et_pb_fullwidth_portfolio.carousel_arrow_sides:hover .et-pb-arrow-next {
+    right: -14px;
+}
+
+.et_pb_fullwidth_portfolio.carousel_arrow_top .et-pb-arrow-prev, .et_pb_fullwidth_portfolio.carousel_arrow_top .et-pb-arrow-next {
+    top: 10%;
+}
+
+.et_pb_fullwidth_portfolio.carousel_arrow_top:hover .et-pb-arrow-prev, .et_pb_fullwidth_portfolio.carousel_arrow_top:hover .et-pb-arrow-next {
+    top: 10%;
+}
+.et_pb_dpfilterable_blog_0.et_pb_filterable_portfolio .post-meta {
+    letter-spacing: normal!important;
+}
+
+.dp-custom-field {
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+.dp-custom-field-name {
+    font-weight: bold;
+}
+
+/*Temporary Mobile Fix*/
+@media only screen and (max-width: 980px) {
+.et_pb_dpblog_portfolio_0 .et_pb_portfolio_item .post-meta {
+    font-size: 18px!important;
+    line-height: 19px!important;
+    letter-spacing: normal !important;
+}
+.et_pb_dpblog_portfolio_0 .et_pb_portfolio_item h2 {
+    font-size: 18px!important;
+    line-height: 19px!important;
+}
+.et_pb_dpfilterable_blog_0.et_pb_filterable_portfolio .et_pb_portfolio_filter {
+    font-size: 18px!important;
+    line-height: 19px!important;
+}
+.et_pb_dpfilterable_blog_0.et_pb_filterable_portfolio .post-meta {
+    font-size: 18px!important;
+    line-height: 19px!important;
+    letter-spacing: normal!important;
+}
+.et_pb_dpfilterable_blog_0.et_pb_filterable_portfolio h2 {
+    font-size: 18px!important;
+    line-height: 19px!important;
+}
+.et_pb_dpfullwidth_blog_0 .et_pb_portfolio_item .post-meta {
+    font-size: 18px!important;
+    line-height: 19px!important;
+    letter-spacing: normal!important;
+}
+.et_pb_dpfullwidth_blog_0 .et_pb_portfolio_item h2 {
+    font-size: 18px!important;
+    line-height: 19px!important;
+}
+.et_pb_dpfullwidth_blog_0 .et_pb_portfolio_item h3 {
+    font-size: 18px!important;
+    line-height: 19px!important;
+}
+
+/* End Temporary Mobile Fix*/
