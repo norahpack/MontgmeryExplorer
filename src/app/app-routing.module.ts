@@ -127,6 +127,10 @@ const routes: Routes = [
     path: 'morgan',
     loadChildren: () => import('./extras/morgan/morgan.module').then( m => m.MorganPageModule)
   },
+  {
+    path: 'tornadopics',
+    loadChildren: () => import('./tornado/tornadopics/tornadopics.module').then( m => m.TornadopicsPageModule)
+  },
 
 ];
 
