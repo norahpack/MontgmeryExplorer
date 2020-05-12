@@ -278,6 +278,10 @@ const routes: Routes = [
     {
     path: 'yost',
     loadChildren: () => import('./landmarks/yost/yost.module').then( m => m.YostPageModule)
+  },
+  {
+    path: 'churchtimeline',
+    loadChildren: () => import('./churchtimeline/churchtimeline.module').then( m => m.ChurchtimelinePageModule)
   }
 
 
