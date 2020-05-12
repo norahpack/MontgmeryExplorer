@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title size="small" color="primary">Architectural Styles</ion-title>
+    <ion-title size="small" color="primary">Stix-Durbrow House, c. 1928</ion-title>
     <ion-thumbnail slot="end"> 
     	<img class="imgmg" src="assets/icon/logo.png">
 	</ion-thumbnail>
@@ -9,5 +9,41 @@
 </ion-header>
 
 <ion-content>
+
+	<ion-card>
+		<img class="style" src="assets/icon/stix.jpg"/>
+			<ion-item class="ion-text-wrap"> <ion-text color="primary">
+		10451 Grandoaks Lane, Montgomery, OH, United States </ion-text>
+			<ion-icon slot="start" color="primary" size="medium" name="location-outline"></ion-icon>
+	</ion-item>
+
+		<ion-card-content>
+Guy Chaney Burrough, noted architect, designed this classic Tudor-style house which is unique to the Montgomery area. The original property comprised more than thirty acres of land.
+
+
+			  		<audio controls id="audio-example">
+		<source src="/assets/audio/stix.mp3">
+			Native audio playback is not supported
+		</audio>
+			<style>
+	#audio-example{
+		display:block;
+		width:100% !important;
+		padding-left:5% !important;
+		padding-right:5% !important;
+		padding-top:5px !important;
+		padding-bottom:5px !important;
+		}
+	</style>
+		</ion-card-content>
+	</ion-card>
+	<ion-item class= "ion-no-padding">
+		<ion-button expand="full" slot="start" fill="clear" color="primary" class="button.end" size="medium" routerLink="/landmarks" routerDirection="root"> Back to historical landmarks list
+			<ion-icon slot="start" color="primary" size="medium" name="arrow-back-circle-outline"></ion-icon>
+		</ion-button>
+	</ion-item>
+	<ion-item> <ion-text size="small" color="danger"> Audio recording performed by Larry Schwartz, Landmarks Commission.
+
+ </ion-text> </ion-item>
 
 </ion-content>

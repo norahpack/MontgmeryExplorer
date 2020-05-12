@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title size="small" color="primary">Architectural Styles</ion-title>
+    <ion-title size="small" color="primary">Cameron-Feinthel House, c. 1891</ion-title>
     <ion-thumbnail slot="end"> 
     	<img class="imgmg" src="assets/icon/logo.png">
 	</ion-thumbnail>
@@ -9,5 +9,42 @@
 </ion-header>
 
 <ion-content>
+
+	<ion-card>
+		<img class="style" src="assets/icon/cameron.jpg"/>
+			<ion-item class="ion-text-wrap"> <ion-text color="primary">
+		7893 Cooper Road, Montgomery, OH, United States </ion-text>
+			<ion-icon slot="start" color="primary" size="medium" name="location-outline"></ion-icon>
+	</ion-item>
+
+		<ion-card-content>
+A Queen Anne style of Victorian architecture, the house has such appointments as patterned shingles and stained glass that enhance the property which first served as a Methodist Parsonage. In 1941, Edward Feinthel purchased the house. He was the village clerk in 1949.
+
+
+
+			  		<audio controls id="audio-example">
+		<source src="/assets/audio/feinthel.mp3">
+			Native audio playback is not supported
+		</audio>
+			<style>
+	#audio-example{
+		display:block;
+		width:100% !important;
+		padding-left:5% !important;
+		padding-right:5% !important;
+		padding-top:5px !important;
+		padding-bottom:5px !important;
+		}
+	</style>
+		</ion-card-content>
+	</ion-card>
+	<ion-item class= "ion-no-padding">
+		<ion-button expand="full" slot="start" fill="clear" color="primary" class="button.end" size="medium" routerLink="/landmarks" routerDirection="root"> Back to historical landmarks list
+			<ion-icon slot="start" color="primary" size="medium" name="arrow-back-circle-outline"></ion-icon>
+		</ion-button>
+	</ion-item>
+	<ion-item> <ion-text size="small" color="danger"> Audio recording performed by Frank Davis, City of Montgomery staff member.
+
+ </ion-text> </ion-item>
 
 </ion-content>

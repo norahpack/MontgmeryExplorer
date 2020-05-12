@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title size="small" color="primary">Architectural Styles</ion-title>
+    <ion-title size="small" color="primary">Hoffman House, c. 1870</ion-title>
     <ion-thumbnail slot="end"> 
     	<img class="imgmg" src="assets/icon/logo.png">
 	</ion-thumbnail>
@@ -8,5 +8,41 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
+
+	<ion-card>
+		<img class="style" src="assets/icon/hoffmna.jpg"/>
+			<ion-item class="ion-text-wrap"> <ion-text color="primary">
+		7887 Cooper Road, Montgomery, OH, United States </ion-text>
+			<ion-icon slot="start" color="primary" size="medium" name="location-outline"></ion-icon>
+	</ion-item>
+
+		<ion-card-content>
+An example of the evolution and adaptation of the Colonial Revival style, there have been several additions to the house since it was first built. Robert Hoffman served 16 years on City Council and Ruth Hoffman was Clerk of Council.
+
+
+			  		<audio controls id="audio-example">
+		<source src="/assets/audio/hoffman.mp3">
+			Native audio playback is not supported
+		</audio>
+			<style>
+	#audio-example{
+		display:block;
+		width:100% !important;
+		padding-left:5% !important;
+		padding-right:5% !important;
+		padding-top:5px !important;
+		padding-bottom:5px !important;
+		}
+	</style>
+		</ion-card-content>
+	</ion-card>
+	<ion-item class= "ion-no-padding">
+		<ion-button expand="full" slot="start" fill="clear" color="primary" class="button.end" size="medium" routerLink="/landmarks" routerDirection="root"> Back to historical landmarks list
+			<ion-icon slot="start" color="primary" size="medium" name="arrow-back-circle-outline"></ion-icon>
+		</ion-button>
+	</ion-item>
+	<ion-item> <ion-text size="small" color="danger"> Audio recording performed by Mark Stella, Landmarks Commission.
+
+ </ion-text> </ion-item>
 
 </ion-content>
