@@ -1,54 +1,25 @@
+
 <ion-header>
-  <ion-toolbar color="danger">
+  <ion-toolbar color="#f8fcff">
     <ion-buttons slot="start">
-      <ion-menu-button color="tertiary"></ion-menu-button>
+      <ion-menu-button color="danger"></ion-menu-button>
     </ion-buttons>
-    <ion-title color="tertiary">
-      Home
+    <ion-title color="#f8fcff">
+        <p id="logoBkg"><img id = "logo" src="http://mekl2wfwv6-flywheel.netdna-ssl.com/wp-content/uploads/2019/10/City-of-Montgomery-Logo.png"> </p>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <!-- <ion-card class="welcome-card"> -->
-      <div class="mapouter">
-      <div class="google_maps">
+<ion-content padding>
 
-        <iframe height="100%" width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=city%20of%20montgomery&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-        </iframe>
-        <a href="https://www.embedgooglemap.net"></a>
 
-      </div>
-    <style>
-    /*.mapouter 
-    {
-      position:relative;
-      text-align:right;
-      height:auto;
-      width:auto;
-    }
-    */
-    .google_maps iframe
-    {
-      position: absolute;
+<div #mapElement class="map"></div>
 
-      width: 100% !important;
-      height: 100% !important;
-    }
-    </style>
-    </div>
-    
-    <!-- </ion-card> -->
-    <!--
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-button expand="full" color="danger" routerLink="/first" routerDirection="forward">First Location</ion-button>
-      <ion-button expand="full" color="secondary" routerLink="/second" routerDirection="forward">Second Location</ion-button>
-      <ion-button expand="full" color="success" routerLink="/third" routerDirection="forward">Third Location</ion-button>
-      <ion-button expand="full" color="primary" routerLink="/fourth" routerDirection="forward">Fourth Location </ion-button>
 
-    </ion-list>
-  -->
+
+
+
+
+
+
 </ion-content>
