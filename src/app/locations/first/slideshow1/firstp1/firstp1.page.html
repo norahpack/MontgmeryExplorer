@@ -1,24 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>firstp1</ion-title>
+    <ion-title size="small" color="primary" class="ion-text-wrap">MONTGOMERY TRIVIA</ion-title>
+    <ion-thumbnail slot="end"> 
+    	<img class="imgmg" src="assets/icon/logo.png">
+	</ion-thumbnail>
+    <ion-menu-button autoHide="false" slot="start" color="danger"></ion-menu-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 	<ion-card>
-		<img height="platform.width()" width="80" src="assets/icon/favicon.png"/>
 		<ion-card-content>
-			<ion-card-title>
-				Blake SUcks
+			<ion-card-title size="large" color="primary">
+				What State were the families who began the Community of Montgomery from?
 			</ion-card-title>
+		
+
+		<ion-button expand="block" fill="outline" color="danger" (click)="presentAlert()"> New Jersey </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlertConfirm()"> New York </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> Pennsylvania </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> Virginia </ion-button>
 		</ion-card-content>
 	</ion-card>
+			
+		
 	<ion-item>
-		<ion-button slot="end" fill="clear" size="small" routerLink="/firstp2" routerDirection="root">
-			<ion-icon slot="end" color="dark" size="medium" name="arrow-dropright"></ion-icon>
-		</ion-button>
-		<ion-button slot="start" fill="clear" size="small" routerLink="/first" routerDirection="root">
-			<ion-icon slot="start" color="dark" size="medium" name="arrow-dropleft"></ion-icon>
+
+		<ion-button expand="full" color="primary" slot="start" fill="clear" size="medium" routerLink="/first" routerDirection="root">
+			<ion-icon slot="start" color="primary" size="medium" name="arrow-back-circle-outline"></ion-icon>
+				Back
 		</ion-button>
 	</ion-item>
+<ion-card>
+	<img class="morgan" src="assets/icon/cooperWest.jpeg"/>
+</ion-card>
 </ion-content>

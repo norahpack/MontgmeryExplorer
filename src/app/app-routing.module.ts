@@ -282,6 +282,42 @@ const routes: Routes = [
   {
     path: 'churchtimeline',
     loadChildren: () => import('./churchtimeline/churchtimeline.module').then( m => m.ChurchtimelinePageModule)
+  },
+  {
+    path: 'mayors',
+    loadChildren: () => import('./mayors/mayors.module').then( m => m.MayorsPageModule)
+  },
+  {
+    path: 'photoalbum',
+    loadChildren: () => import('./photoalbum/photoalbum.module').then( m => m.PhotoalbumPageModule)
+  },
+  {
+    path: 'aerial',
+    loadChildren: () => import('./aerial/aerial.module').then( m => m.AerialPageModule)
+  },
+  {
+    path: 'downtow',
+    loadChildren: () => import('./downtow/downtow.module').then( m => m.DowntowPageModule)
+  },
+  {
+    path: 'cityhall',
+    loadChildren: () => import('./cityhall/cityhall.module').then( m => m.CityhallPageModule)
+  },
+  {
+    path: 'cityservices',
+    loadChildren: () => import('./cityservices/cityservices.module').then( m => m.CityservicesPageModule)
+  },
+  {
+    path: 'parksandevents',
+    loadChildren: () => import('./parksandevents/parksandevents.module').then( m => m.ParksandeventsPageModule)
+  },
+  {
+    path: 'schools',
+    loadChildren: () => import('./schools/schools.module').then( m => m.SchoolsPageModule)
+  },
+  {
+    path: 'community',
+    loadChildren: () => import('./community/community.module').then( m => m.CommunityPageModule)
   }
 
 
