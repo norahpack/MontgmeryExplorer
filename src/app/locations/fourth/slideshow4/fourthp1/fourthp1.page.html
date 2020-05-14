@@ -1,9 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>fourthp1</ion-title>
+    <ion-title size="small" color="primary" class="ion-text-wrap">MONTGOMERY TRIVIA</ion-title>
+    <ion-thumbnail slot="end"> 
+    	<img class="imgmg" src="assets/icon/logo.png">
+	</ion-thumbnail>
+    <ion-menu-button autoHide="false" slot="start" color="danger"></ion-menu-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+	<ion-card>
+		<ion-card-content>
+			<ion-card-title size="large" color="primary">
+				Which park was dedicated in 1997?
+			</ion-card-title>
+		
 
+		<ion-button expand="block" fill="outline" color="danger" (click)="presentAlert()"> Pioneer Park </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> Dulle Park </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlertConfirm()"> Weller Park </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> Swaim park </ion-button>
+		</ion-card-content>
+	</ion-card>
+			
+		
+	<ion-item>
+
+		<ion-button expand="full" color="primary" slot="start" fill="clear" size="medium" routerLink="/fourth" routerDirection="root">
+			<ion-icon slot="start" color="primary" size="medium" name="arrow-back-circle-outline"></ion-icon>
+				Back
+		</ion-button>
+	</ion-item>
+<ion-card>
+	<img class="morgan" src="assets/icon/weller.jpg"/>
+</ion-card>
 </ion-content>

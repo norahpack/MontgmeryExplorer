@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: SoccerPage
+  },
+  {
+    path: 'soccertrivia',
+    loadChildren: () => import('./soccertrivia/soccertrivia.module').then( m => m.SoccertriviaPageModule)
   }
 ];
 

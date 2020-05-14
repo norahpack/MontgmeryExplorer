@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
-    "@ionic-native/core": "^5.0.0",
+    "@ionic-native/core": "^5.25.0",
     "@ionic-native/geolocation": "^5.25.0",
     "@ionic-native/in-app-browser": "^4.20.0",
     "@ionic-native/native-audio": "^5.19.1",

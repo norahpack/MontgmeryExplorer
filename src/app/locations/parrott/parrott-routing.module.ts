@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ParrottPage
+  },
+  {
+    path: 'parrotttrivia',
+    loadChildren: () => import('./parrotttrivia/parrotttrivia.module').then( m => m.ParrotttriviaPageModule)
   }
 ];
 

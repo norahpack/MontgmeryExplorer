@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: TornadoPage
+  },
+  {
+    path: 'tornadotrivia',
+    loadChildren: () => import('./tornadotrivia/tornadotrivia.module').then( m => m.TornadotriviaPageModule)
   }
 ];
 

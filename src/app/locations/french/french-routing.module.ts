@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: FrenchPage
+  },
+  {
+    path: 'frenchtrivia',
+    loadChildren: () => import('./frenchtrivia/frenchtrivia.module').then( m => m.FrenchtriviaPageModule)
   }
 ];
 

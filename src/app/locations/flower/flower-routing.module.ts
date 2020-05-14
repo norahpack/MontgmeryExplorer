@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: FlowerPage
+  },
+  {
+    path: 'flowertrivia',
+    loadChildren: () => import('./flowertrivia/flowertrivia.module').then( m => m.FlowertriviaPageModule)
   }
 ];
 

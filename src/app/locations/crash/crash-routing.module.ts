@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: CrashPage
+  },
+  {
+    path: 'crashtrivia',
+    loadChildren: () => import('./crashtrivia/crashtrivia.module').then( m => m.CrashtriviaPageModule)
   }
 ];
 

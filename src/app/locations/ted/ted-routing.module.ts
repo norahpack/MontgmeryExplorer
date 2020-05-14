@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: TedPage
+  },
+  {
+    path: 'tedtrivia',
+    loadChildren: () => import('./tedtrivia/tedtrivia.module').then( m => m.TedtriviaPageModule)
   }
 ];
 
