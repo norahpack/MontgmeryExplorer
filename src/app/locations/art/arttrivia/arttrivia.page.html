@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size="small" color="primary" class="ion-text-wrap">MONTGOMERY TRIVIA</ion-title>
+    <ion-thumbnail slot="end"> 
+    	<img class="imgmg" src="assets/icon/logo.png">
+	</ion-thumbnail>
+    <ion-menu-button autoHide="false" slot="start" color="danger"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+		<ion-card-content>
+			<ion-card-title size="large" color="primary">
+				In what year was the first Montgomery Kiwanis Art Show?
+			</ion-card-title>
+		
+
+		<ion-button expand="block" fill="outline" color="danger" (click)="presentAlert()"> 1905 </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> 1965 </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> 1977 </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlertConfirm()"> 1955 </ion-button>
+		</ion-card-content>
+	</ion-card>
+			
+		
+	<ion-item>
+
+		<ion-button expand="full" color="primary" slot="start" fill="clear" size="medium" routerLink="/art" routerDirection="root">
+			<ion-icon slot="start" color="primary" size="medium" name="arrow-back-circle-outline"></ion-icon>
+				Back
+		</ion-button>
+	</ion-item>
+<ion-card>
+	<img class="morgan" src="assets/icon/artshow1.jpg"/>
+</ion-card>
+</ion-content>

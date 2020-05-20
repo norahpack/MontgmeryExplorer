@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: NeuillyPage
+  },
+  {
+    path: 'neuillytrivia',
+    loadChildren: () => import('./neuillytrivia/neuillytrivia.module').then( m => m.NeuillytriviaPageModule)
   }
 ];
 

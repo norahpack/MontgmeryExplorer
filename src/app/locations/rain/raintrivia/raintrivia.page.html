@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size="small" color="primary" class="ion-text-wrap">MONTGOMERY TRIVIA</ion-title>
+    <ion-thumbnail slot="end"> 
+    	<img class="imgmg" src="assets/icon/logo.png">
+	</ion-thumbnail>
+    <ion-menu-button autoHide="false" slot="start" color="danger"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+		<ion-card-content>
+			<ion-card-title size="large" color="primary">
+				What state did the City of Montgomery representatives visit?
+			</ion-card-title>
+		
+
+		<ion-button expand="block" fill="outline" color="danger" (click)="presentAlert()"> Alabama </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> Delaware </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> Connecticut </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlertConfirm()"> New York </ion-button>
+		</ion-card-content>
+	</ion-card>
+			
+		
+	<ion-item>
+
+		<ion-button expand="full" color="primary" slot="start" fill="clear" size="medium" routerLink="/rain" routerDirection="root">
+			<ion-icon slot="start" color="primary" size="medium" name="arrow-back-circle-outline"></ion-icon>
+				Back
+		</ion-button>
+	</ion-item>
+<ion-card>
+	<img class="morgan" src="assets/icon/rain.jpg"/>
+</ion-card>
+</ion-content>

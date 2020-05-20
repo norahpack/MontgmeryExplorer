@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: SchoolPage
+  },
+  {
+    path: 'schooltrivia',
+    loadChildren: () => import('./schooltrivia/schooltrivia.module').then( m => m.SchooltriviaPageModule)
   }
 ];
 

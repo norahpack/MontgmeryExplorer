@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: FirePage
+  },
+  {
+    path: 'firetrivia',
+    loadChildren: () => import('./firetrivia/firetrivia.module').then( m => m.FiretriviaPageModule)
   }
 ];
 

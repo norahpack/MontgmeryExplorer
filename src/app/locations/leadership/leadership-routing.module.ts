@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: LeadershipPage
+  },
+  {
+    path: 'leadershiptrivia',
+    loadChildren: () => import('./leadershiptrivia/leadershiptrivia.module').then( m => m.LeadershiptriviaPageModule)
   }
 ];
 

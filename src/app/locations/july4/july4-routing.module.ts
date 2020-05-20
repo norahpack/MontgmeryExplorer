@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: July4Page
+  },
+  {
+    path: 'july4trivia',
+    loadChildren: () => import('./july4trivia/july4trivia.module').then( m => m.July4triviaPageModule)
   }
 ];
 

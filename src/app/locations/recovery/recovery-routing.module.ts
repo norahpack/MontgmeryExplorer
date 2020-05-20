@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: RecoveryPage
+  },
+  {
+    path: 'recoverytrivia',
+    loadChildren: () => import('./recoverytrivia/recoverytrivia.module').then( m => m.RecoverytriviaPageModule)
   }
 ];
 

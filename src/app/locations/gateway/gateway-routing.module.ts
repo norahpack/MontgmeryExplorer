@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: GatewayPage
+  },
+  {
+    path: 'gatewaytrivia',
+    loadChildren: () => import('./gatewaytrivia/gatewaytrivia.module').then( m => m.GatewaytriviaPageModule)
   }
 ];
 

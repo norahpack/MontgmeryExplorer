@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ArtPage
+  },
+  {
+    path: 'arttrivia',
+    loadChildren: () => import('./arttrivia/arttrivia.module').then( m => m.ArttriviaPageModule)
   }
 ];
 

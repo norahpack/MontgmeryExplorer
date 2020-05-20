@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: CertPage
+  },
+  {
+    path: 'certtrivia',
+    loadChildren: () => import('./certtrivia/certtrivia.module').then( m => m.CerttriviaPageModule)
   }
 ];
 

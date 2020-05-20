@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { AlertController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-root',
@@ -26,6 +28,21 @@ export class AppComponent {
     url: '/landmarks',
     icon: 'pin'
 
+    },
+    {
+    title: 'Mayors',
+    url: '/mayors',
+    icon: 'person'
+    },
+    {
+    title: 'Morgan\'s Raid',
+    url: '/morgan',
+    icon: 'compass-outline'
+    },
+    {
+    title: 'Photo Album',
+    url: '/photoalbum',
+    icon:'camera-outline'
     }
   ];
 

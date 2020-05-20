@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: RainPage
+  },
+  {
+    path: 'raintrivia',
+    loadChildren: () => import('./raintrivia/raintrivia.module').then( m => m.RaintriviaPageModule)
   }
 ];
 

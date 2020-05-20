@@ -1,9 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>secondp1</ion-title>
+    <ion-title size="small" color="primary" class="ion-text-wrap">MONTGOMERY TRIVIA</ion-title>
+    <ion-thumbnail slot="end"> 
+    	<img class="imgmg" src="assets/icon/logo.png">
+	</ion-thumbnail>
+    <ion-menu-button autoHide="false" slot="start" color="danger"></ion-menu-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+	<ion-card>
+		<ion-card-content>
+			<ion-card-title size="large" color="primary">
+				What year was Montgomery's Bicentennial?
+			</ion-card-title>
+		
 
+		<ion-button expand="block" fill="outline" color="danger" (click)="presentAlertConfirm()"> 1995 </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> 1997 </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> 1994 </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> 2000 </ion-button>
+		</ion-card-content>
+	</ion-card>
+			
+		
+	<ion-item>
+
+		<ion-button expand="full" color="primary" slot="start" fill="clear" size="medium" routerLink="/second" routerDirection="root">
+			<ion-icon slot="start" color="primary" size="medium" name="arrow-back-circle-outline"></ion-icon>
+				Back
+		</ion-button>
+	</ion-item>
+<ion-card>
+	<img class="morgan" src="assets/icon/bicentennial.jpg"/>
+</ion-card>
 </ion-content>

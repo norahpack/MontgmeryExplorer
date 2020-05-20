@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: SagePage
+  },
+  {
+    path: 'sagetrivia',
+    loadChildren: () => import('./sagetrivia/sagetrivia.module').then( m => m.SagetriviaPageModule)
   }
 ];
 

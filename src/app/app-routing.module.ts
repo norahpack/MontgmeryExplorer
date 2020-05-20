@@ -282,6 +282,139 @@ const routes: Routes = [
   {
     path: 'churchtimeline',
     loadChildren: () => import('./churchtimeline/churchtimeline.module').then( m => m.ChurchtimelinePageModule)
+  },
+  {
+    path: 'mayors',
+    loadChildren: () => import('./mayors/mayors.module').then( m => m.MayorsPageModule)
+  },
+  {
+    path: 'photoalbum',
+    loadChildren: () => import('./photoalbum/photoalbum.module').then( m => m.PhotoalbumPageModule)
+  },
+  {
+    path: 'aerial',
+    loadChildren: () => import('./aerial/aerial.module').then( m => m.AerialPageModule)
+  },
+  {
+    path: 'downtow',
+    loadChildren: () => import('./downtow/downtow.module').then( m => m.DowntowPageModule)
+  },
+  {
+    path: 'cityhall',
+    loadChildren: () => import('./cityhall/cityhall.module').then( m => m.CityhallPageModule)
+  },
+  {
+    path: 'cityservices',
+    loadChildren: () => import('./cityservices/cityservices.module').then( m => m.CityservicesPageModule)
+  },
+  {
+    path: 'parksandevents',
+    loadChildren: () => import('./parksandevents/parksandevents.module').then( m => m.ParksandeventsPageModule)
+  },
+  {
+    path: 'schools',
+    loadChildren: () => import('./schools/schools.module').then( m => m.SchoolsPageModule)
+  },
+  {
+    path: 'community',
+    loadChildren: () => import('./community/community.module').then( m => m.CommunityPageModule)
+  },
+{
+  path: 'arttrivia',
+    loadChildren: () => import('./locations/art/arttrivia/arttrivia.module').then( m => m.ArttriviaPageModule)
+},
+{
+    path: 'cartrivia',
+    loadChildren: () => import('./locations/car/cartrivia/cartrivia.module').then( m => m.CartriviaPageModule)
+},
+  {
+    path: 'certtrivia',
+    loadChildren: () => import('./locations/cert/certtrivia/certtrivia.module').then( m => m.CerttriviaPageModule)
+  },
+    {
+    path: 'crashtrivia',
+    loadChildren: () => import('./locations/crash/crashtrivia/crashtrivia.module').then( m => m.CrashtriviaPageModule)
+  },
+    {
+    path: 'farmerstrivia',
+    loadChildren: () => import('./locations/farmers/farmerstrivia/farmerstrivia.module').then( m => m.FarmerstriviaPageModule)
+  },
+    {
+    path: 'firetrivia',
+    loadChildren: () => import('./locations/fire/firetrivia/firetrivia.module').then( m => m.FiretriviaPageModule)
+  },
+    {
+    path: 'flowertrivia',
+    loadChildren: () => import('./locations/flower/flowertrivia/flowertrivia.module').then( m => m.FlowertriviaPageModule)
+  },
+    {
+    path: 'fourthp1',
+    loadChildren: () => import('./locations/fourth/slideshow4/fourthp1/fourthp1.module').then( m => m.Fourthp1PageModule)
+  },
+    {
+    path: 'frenchtrivia',
+    loadChildren: () => import('./locations/french/frenchtrivia/frenchtrivia.module').then( m => m.FrenchtriviaPageModule)
+  },
+    {
+    path: 'gatewaytrivia',
+    loadChildren: () => import('./locations/gateway/gatewaytrivia/gatewaytrivia.module').then( m => m.GatewaytriviaPageModule)
+  },
+    {
+    path: 'july4trivia',
+    loadChildren: () => import('./locations/july4/july4trivia/july4trivia.module').then( m => m.July4triviaPageModule)
+  },
+    {
+    path: 'leadershiptrivia',
+    loadChildren: () => import('./locations/leadership/leadershiptrivia/leadershiptrivia.module').then( m => m.LeadershiptriviaPageModule)
+  },
+    {
+    path: 'neuillytrivia',
+    loadChildren: () => import('./locations/neuilly/neuillytrivia/neuillytrivia.module').then( m => m.NeuillytriviaPageModule)
+  },
+    {
+    path: 'parrotttrivia',
+    loadChildren: () => import('./locations/parrott/parrotttrivia/parrotttrivia.module').then( m => m.ParrotttriviaPageModule)
+  },
+    {
+    path: 'raintrivia',
+    loadChildren: () => import('./locations/rain/raintrivia/raintrivia.module').then( m => m.RaintriviaPageModule)
+  },
+    {
+    path: 'recoverytrivia',
+    loadChildren: () => import('./locations/recovery/recoverytrivia/recoverytrivia.module').then( m => m.RecoverytriviaPageModule)
+  },
+    {
+    path: 'schooltrivia',
+    loadChildren: () => import('./locations/school/schooltrivia/schooltrivia.module').then( m => m.SchooltriviaPageModule)
+  },
+    {
+    path: 'secondp1',
+    loadChildren: () => import('./locations/second/slideshow2/secondp1/secondp1.module').then( m => m.Secondp1PageModule)
+  },
+    {
+    path: 'soccertrivia',
+    loadChildren: () => import('./locations/soccer/soccertrivia/soccertrivia.module').then( m => m.SoccertriviaPageModule)
+  },
+    {
+    path: 'tedtrivia',
+    loadChildren: () => import('./locations/ted/tedtrivia/tedtrivia.module').then( m => m.TedtriviaPageModule)
+  },
+    {
+    path: 'thirdp1',
+    loadChildren: () => import('./locations/third/slideshow3/thirdp1/thirdp1.module').then( m => m.Thirdp1PageModule)
+  },
+
+  {
+    path: 'tornadotrivia',
+    loadChildren: () => import('./locations/tornado/tornadotrivia/tornadotrivia.module').then( m => m.TornadotriviaPageModule)
+  },
+    {
+    path: 'taverntrivia',
+    loadChildren: () => import('./tavern/taverntrivia/taverntrivia.module').then( m => m.TaverntriviaPageModule)
+  },
+  {
+    path: 'homepage',
+    loadChildren: () => import('./homepage/homepage.module').then( m => m.HomepagePageModule)
   }
 
 

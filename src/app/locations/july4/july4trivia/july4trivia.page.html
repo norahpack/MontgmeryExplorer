@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size="small" color="primary" class="ion-text-wrap">MONTGOMERY TRIVIA</ion-title>
+    <ion-thumbnail slot="end"> 
+    	<img class="imgmg" src="assets/icon/logo.png">
+	</ion-thumbnail>
+    <ion-menu-button autoHide="false" slot="start" color="danger"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+		<ion-card-content>
+			<ion-card-title size="large" color="primary">
+				What type of award did Montgomery recieve in 2015?
+			</ion-card-title>
+		
+
+		<ion-button expand="block" fill="outline" color="danger" (click)="presentAlert()"> Innovative Design Award </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> Community Spirit Award </ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlertConfirm()"> Environmental Award</ion-button>
+		<ion-button expand="block"fill="outline" color="danger" (click)="presentAlert()"> Safest City Award </ion-button>
+		</ion-card-content>
+	</ion-card>
+			
+		
+	<ion-item>
+
+		<ion-button expand="full" color="primary" slot="start" fill="clear" size="medium" routerLink="/july4" routerDirection="root">
+			<ion-icon slot="start" color="primary" size="medium" name="arrow-back-circle-outline"></ion-icon>
+				Back
+		</ion-button>
+	</ion-item>
+<ion-card>
+	<img class="morgan" src="assets/icon/ville.jpg"/>
+</ion-card>
+</ion-content>
