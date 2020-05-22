@@ -19,6 +19,11 @@ export class AppComponent {
       icon: 'home'
     },
     {
+    title: 'About Montgomery\'s History',
+    url: '/homepage',
+    icon: 'help-outline'
+    },
+    {
       title: 'Timeline',
       url: '/list',
       icon: 'list'
@@ -37,12 +42,12 @@ export class AppComponent {
     {
     title: 'Morgan\'s Raid',
     url: '/morgan',
-    icon: 'compass-outline'
+    icon: 'compass'
     },
     {
     title: 'Photo Album',
     url: '/photoalbum',
-    icon:'camera-outline'
+    icon:'camera'
     }
   ];
 
