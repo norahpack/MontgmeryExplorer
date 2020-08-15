@@ -87,7 +87,7 @@ export class HomePage implements OnInit, AfterViewInit {
 		/* Marker with link to page creation */
 
 
-		// var infoWindow = new google.maps.InfoWindow();
+		//var mapDiv = document.getElementById('map');
 
 		function addLinikedMarker (lat, lng, icon, popupString: string, name: string) {
 
@@ -101,9 +101,12 @@ export class HomePage implements OnInit, AfterViewInit {
 			marker.addListener('click', function () {
 				infoWindow.open(map, marker);
 			});
-			map.addListener('click', function() {
-				infoWindow.close();
-			});
+
+			google.maps.event.addDomListener(map, 'click', function() {
+          		infoWindow.close();
+        	});
+
+			// infoWindow.close();
 	
 		}
 		/* Linked Marker Calls */
