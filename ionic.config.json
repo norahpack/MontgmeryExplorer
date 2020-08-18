@@ -1,7 +1,8 @@
 {
   "name": "Montgomery Explorer",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }
